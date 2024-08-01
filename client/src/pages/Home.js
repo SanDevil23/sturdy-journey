@@ -5,14 +5,16 @@ import AboutSection from "../components/AboutSection";
 import TechStack from "../components/TechStack";
 import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
+import ProjectSection from "../components/ProjectSection";
 
 const Home = () => {
 
-  const [activeSection, setActiveSection] = useState('IntroCard'); // Initialize with 'skills' as active section
+  // const [activeSection, setActiveSection] = useState('IntroCard'); // Initialize with 'skills' as active section
 
-  const handleSetActive = (section) => {
-    setActiveSection(section);
-  };
+  // const handleSetActive = (section) => {
+  //   setActiveSection(section);
+  // };
+
 
   return (
     <div className="bg-black">
@@ -29,7 +31,9 @@ const Home = () => {
         <IntroCard />
         <AboutSection />
         <TechStack />
-
+        
+        {/* ProjectCard */}
+        <ProjectSection/>
         <Footer/>
       {/* </div> */}
     </div>

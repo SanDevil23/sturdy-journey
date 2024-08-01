@@ -12,7 +12,7 @@ const IntroCard = () => {
 
     <div className="grid grid-cols-2 p-28 h-screen">
 
-        <div className='flex-auto items-center bottom-5'>
+        <div className='flex-auto items-center self-center bottom-5'>
           {/* <div className='text-lg'>hi. my name is </div> */}
           <div className="pb-2 text-7xl tracking-wide text-orange-100 font-extrabold">Sankalp Adhya</div>
           <div className="pb-2 text-xl font-semibold text-white">Full Stack Developer and Aspiring Software Engineer</div>
