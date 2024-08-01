@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white p-7">
       <div className="flex items-center justify-evenly max-w-4xl mx-auto">
-        <p>&copy; 2024 SNK Technologies Inc. All rights reserved.</p>
+        <p>&copy; 2024 @SanDevil23 Github.com All rights reserved.</p>
         <div className="flex space-x-4">
           <a href="https://x.com/wasted_Coder" className="text-gray-300 hover:text-white">
             <XIcon size={24} />

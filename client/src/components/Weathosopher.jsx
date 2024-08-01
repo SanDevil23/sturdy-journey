@@ -1,4 +1,5 @@
 import React from 'react'
+import coverPic from './assets/images/cover1.png'
 
 const Weathosopher = () => {
   return (
@@ -13,12 +14,12 @@ const Weathosopher = () => {
                 <p className='mt-4 md:mt-8 lg:mt-12 text-left text-lg font-medium'><b>Built With : </b>ReactJS, Node, ExpressJS, Open Weather API ,Git, TailWind CSS. </p>
                 
                 <br />
-                <button className='flex p-4 w-fit h-1 items-center border-solid border-1 border-white'><a href="https://www.github.com/SanDevil23/Weathosopher">View the Code</a></button>
+                <button className='flex p-4 w-fit h-1 items-center border-solid border border-white'><a href="https://www.github.com/SanDevil23/Weathosopher">View the Code</a></button>
             </div>
 
             <div>
                 {/* image */}
-                <img src="https://static.vecteezy.com/system/resources/previews/002/766/920/original/daily-forecasts-cartoon-smartphone-interface-templates-set-mobile-app-screen-page-night-and-day-mode-design-meteorological-observations-weather-forecasting-ui-for-application-phone-display-vector.jpg" alt="" />
+                <img src={coverPic} alt="" />
             </div>
 
         </div>
