@@ -10,9 +10,9 @@ const TopNav = () => {
           <Lottie animationData={logo}/>    
           <a className="text-4xl text-white" href="/">portfolio.</a>
         </div>  
-        <div className="float-right text-3xl text-white ">
+        <div className="float-right text-3xl text-white mr-2">
           <a href="/">about </a>
-          <a href="/">blogs </a>
+          <a href="/blogs">blogs </a>
           <a href="/">projects </a>
         </div>
       </div>      

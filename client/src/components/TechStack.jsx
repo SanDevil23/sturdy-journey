@@ -18,7 +18,7 @@ const TechStack = () => {
         <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/0*HSvwW06lbePoK5Fg.png" alt="" width={200} height={200}/>
 
         <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="" width={200} height={200}/>
-        <img src="https://thumbs.bfldr.com/at/h5psv9c3jbk88pwc3xn79pp?expiry=1723096074&fit=bounds&height=800&sig=NmVhZmI2M2Y1ZWYxODBiZWNjNjVjNTI1MDQyNWIxYTNhYjQ0NWE4Yg%3D%3D&width=1100" alt="" width={200} height={200}/>
+        {/* <img src="https://thumbs.bfldr.com/at/h5psv9c3jbk88pwc3xn79pp?expiry=1723096074&fit=bounds&height=800&sig=NmVhZmI2M2Y1ZWYxODBiZWNjNjVjNTI1MDQyNWIxYTNhYjQ0NWE4Yg%3D%3D&width=1100" alt="" width={200} height={200}/> */}
         {/* <img src="https://www.eclipse.org/org/artwork/images/eclipse-ide-logo.png" alt="" width={200} height={200}/> */}
         
       </div>

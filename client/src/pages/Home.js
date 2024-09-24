@@ -6,6 +6,7 @@ import TechStack from "../components/TechStack";
 import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import ProjectSection from "../components/ProjectSection";
+import BlogsPagePoster from "../components/blogComponents/BlogsPagePoster";
 
 const Home = () => {
 
@@ -33,8 +34,10 @@ const Home = () => {
         <TechStack />
         
         {/* ProjectCard */}
+        <BlogsPagePoster/>
         <ProjectSection/>
         <Footer/>
+
       {/* </div> */}
     </div>
   );
