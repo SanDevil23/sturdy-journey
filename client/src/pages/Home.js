@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import IntroCard from "../components/IntroCard";
 // import ProjectCard from "../components/ProjectCard";
 import AboutSection from "../components/AboutSection";
@@ -10,13 +10,23 @@ import BlogsPagePoster from "../components/blogComponents/BlogsPagePoster";
 
 const Home = () => {
 
+
   // const [activeSection, setActiveSection] = useState('IntroCard'); // Initialize with 'skills' as active section
 
   // const handleSetActive = (section) => {
   //   setActiveSection(section);
   // };
-
-
+  const sectionRefs = {
+    section1: useRef(null),
+    section2: useRef(null),
+    section3: useRef(null),
+  };
+  const scrollToSection = (section) => {
+    if (sectionRefs[section].current) {
+        sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <div className="bg-black">
       {/* <nav className="relative">
@@ -28,14 +38,14 @@ const Home = () => {
       </nav> */}
 
       {/* <div className={`content ${activeSection}`}> */}
-        <TopNav/>
+        <TopNav scrollToSection={scrollToSection}/>
         <IntroCard />
-        <AboutSection />
+        <AboutSection ref={sectionRefs.section1}/>
         <TechStack />
         
         {/* ProjectCard */}
-        <BlogsPagePoster/>
-        <ProjectSection/>
+        <BlogsPagePoster ref={sectionRefs.section2}/>
+        <ProjectSection ref={sectionRefs.section3}/>
         <Footer/>
 
       {/* </div> */}

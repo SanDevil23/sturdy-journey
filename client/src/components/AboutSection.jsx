@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Lottie from 'lottie-react'
 // import InfiniteLoader from './assets/InfiniteLoading.json'
 import Working from './assets/WorkDesk.json'
 import screen from './assets/Working.json'
 
-const AboutSection = () => {
+const AboutSection = (props, refC) => {
   return (
-    <div>
+    <div ref={refC}>
     <div className="grid grid-cols-2 p-28 bg-zinc-950 text-white h-full">
         <div className=' justify-center p-3 text-7xl font-semibold items-center'>
           Hi, I'm a Computer Science Enthusiast
@@ -36,4 +36,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default React.forwardRef(AboutSection);

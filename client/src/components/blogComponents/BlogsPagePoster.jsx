@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BlogsPagePoster = () => {
+const BlogsPagePoster = (props, ref) => {
   return (
-    <div className='text-black bg-slate-50 p-20'>
+    <div ref ={ref} className='text-black bg-slate-50 p-20'>
       <div className='text-center font-extralight text-8xl leading-snug'>Blog Page Coming Soon</div>
       <div className='text-center text-2xl font-extralight'>Contribute to the blog page by writing articles about your favorite topics and interests</div>
       <div className='flex justify-center p-4'>
@@ -13,4 +13,4 @@ const BlogsPagePoster = () => {
   )
 }
 
-export default BlogsPagePoster
+export default React.forwardRef(BlogsPagePoster);
