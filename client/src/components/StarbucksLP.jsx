@@ -14,9 +14,11 @@ const StarbucksLP = () => {
                 <p className='mt-4 md:mt-8 lg:mt-12 text-left text-lg font-medium'><b>Built With : </b>HTML, CSS, JavaScript </p>
                 
                 <br />
-                <button className='flex p-4 w-fit h-1 items-center border-solid border border-white '><a href="https://sandevil23.github.io/starbucks_landingpage/">View Webpage</a></button>
-                <button className='flex p-4 w-fit h-1 items-center border-solid border mt-2 border-white text-white hover:bg-cyan-800'><a href="https://github.com/SanDevil23/starbucks_landingpage">View the Code</a></button>
-            
+                <div className=''>
+                  <button className='bg-teal-800 rounded-md p-2 hover:bg-teal-600 font-mono mr-2'><a href="https://sandevil23.github.io/starbucks_landingpage/">View Webpage</a></button>
+                  <button className='bg-green-800 rounded-md p-2 hover:bg-lime-600 font-mono'><a href="https://github.com/SanDevil23/starbucks_landingpage">View the Code</a></button>
+              
+                </div>
             </div>
 
             <div>

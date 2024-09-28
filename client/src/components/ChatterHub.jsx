@@ -10,7 +10,7 @@ const ChatterHub = () => {
                 <p className='mt-4 md:mt-8 lg:mt-12 text-left text-xl font-medium'>Real Time One-to-One Messaging Application</p>
                 <p className='mt-4 md:mt-8 lg:mt-12 text-left text-lg font-medium'><b>Built With : </b>ReactJS, Node, ExpressJS, MongoDB (NoSQL Database, Cloud Functions, Cloud Storage),Git, ChakraUI, Cloudinary. </p>
                 <br />
-                <button className='flex p-4 w-fit h-1 items-center border-solid border border-white'><a href="https://www.github.com/SanDevil23/ChatterHub">View the Code</a></button>
+                <button className='bg-green-800 rounded-md p-2 hover:bg-lime-600 font-mono'><a href="https://www.github.com/SanDevil23/ChatterHub">View the Code</a></button>
             </div>
 
             <div>
