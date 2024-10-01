@@ -34,4 +34,4 @@ const AboutSection = (props, refC) => {
   );
 };
 
-export default forwardRef(AboutSection);
+export default React.forwardRef(AboutSection);

@@ -7,15 +7,11 @@ import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import ProjectSection from "../components/ProjectSection";
 import BlogsPagePoster from "../components/blogComponents/BlogsPagePoster";
+import Blogs from "./Blogs";
 
 const Home = () => {
+  const [blog, setBlog] = useState(false);
 
-
-  // const [activeSection, setActiveSection] = useState('IntroCard'); // Initialize with 'skills' as active section
-
-  // const handleSetActive = (section) => {
-  //   setActiveSection(section);
-  // };
   const sectionRefs = {
     section1: useRef(null),
     section2: useRef(null),
@@ -23,32 +19,36 @@ const Home = () => {
   };
   const scrollToSection = (section) => {
     if (sectionRefs[section].current) {
-        sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+      sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
+  const toggleBlogs = () => {
+    setBlog(true);
+    return;
+  };
+
   return (
     <div className="bg-black">
-      {/* <nav className="relative">
-        <ul>
-          <li className={activeSection === 'IntroCard' ? 'active' : ''} onClick={() => handleSetActive('IntroCard')}>00</li>
-          <li className={activeSection === 'AboutSection' ? 'active' : ''} onClick={() => handleSetActive('AboutSection')}>01</li>
-          <li className={activeSection === 'TechStack' ? 'active' : ''} onClick={() => handleSetActive('TechStack')}>02</li>
-        </ul>
-      </nav> */}
+      <TopNav scrollToSection={scrollToSection} />
+      {blog ? (
+        <div>
+          <Blogs />
+        </div>
+      ) : (
+        <div>
+          <IntroCard />
+          <AboutSection ref={sectionRefs.section1} />
+          <TechStack />
 
-      {/* <div className={`content ${activeSection}`}> */}
-        <TopNav scrollToSection={scrollToSection}/>
-        <IntroCard />
-        <AboutSection ref={sectionRefs.section1}/>
-        <TechStack />
-        
-        {/* ProjectCard */}
-        <BlogsPagePoster ref={sectionRefs.section2}/>
-        <ProjectSection ref={sectionRefs.section3}/>
-        <Footer/>
-
-      {/* </div> */}
+          <BlogsPagePoster
+            toggleBlogs={toggleBlogs}
+            ref={sectionRefs.section2}
+          />
+          <ProjectSection ref={sectionRefs.section3} />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };

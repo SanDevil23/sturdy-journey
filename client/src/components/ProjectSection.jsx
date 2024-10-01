@@ -5,7 +5,7 @@ import ChatterHub from './ChatterHub';
 import Weathosopher from './Weathosopher';
 import StarbucksLP from './StarbucksLP';
 
-const ProjectSection = React.forwardRef((props, ref) => {
+const ProjectSection = ((props, ref) => {
     const slides = [
         <div className='h-screen flex items-center justify-center' key={1}><ProjectPage /></div>,
         <div className='h-screen flex items-center justify-center' key={2}><ChatterHub /></div>,
@@ -22,4 +22,4 @@ const ProjectSection = React.forwardRef((props, ref) => {
     );
 });
 
-export default ProjectSection;
+export default React.forwardRef(ProjectSection);

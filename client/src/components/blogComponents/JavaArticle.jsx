@@ -3,8 +3,8 @@ import React from 'react'
 const JavaArticle = () => {
   return (
     <div>
-      <div className='p-28 h-screen bg-slate-100'>
-        <div className='border-1 border-black p-2 bg-white shadow-md'>
+      <div className='p-28 h-screen bg-slate-400'>
+        <div className='border-1 border-black p-4 bg-white shadow-md rounded-md'>
             <div className='text-black text-5xl'>
                 Are We Sacrificing Readability for Conciseness in Modern Java?
             </div>
