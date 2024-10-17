@@ -8,6 +8,8 @@ import Footer from "../components/Footer";
 import ProjectSection from "../components/ProjectSection";
 import BlogsPagePoster from "../components/blogComponents/BlogsPagePoster";
 import Blogs from "./Blogs";
+import NewFooter from "../components/NewFooter";
+// import QRGenerator from "../components/interactiveComponents/QRGenerator";
 
 const Home = () => {
   const [blog, setBlog] = useState(false);
@@ -39,14 +41,16 @@ const Home = () => {
         <div>
           <IntroCard />
           <AboutSection ref={sectionRefs.section1} />
-          <TechStack />
-
           <BlogsPagePoster
             toggleBlogs={toggleBlogs}
             ref={sectionRefs.section2}
           />
+          <TechStack />
+
           <ProjectSection ref={sectionRefs.section3} />
-          <Footer />
+          {/* <QRGenerator/> */}
+          {/* <Footer /> */}
+          <NewFooter/>
         </div>
       )}
     </div>

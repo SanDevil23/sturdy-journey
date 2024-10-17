@@ -19,7 +19,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/sankalp-adhya-67914621b/" className="text-gray-300 hover:text-white">
             <LinkedInIcon size={24} />
           </a>
-          <a href="/" className="text-gray-300 hover:text-white">
+          <a href="https://www.instagram.com/sankalp.23/" className="text-gray-300 hover:text-white">
             <InstagramIcon size={24} />
           </a>
         </div>
