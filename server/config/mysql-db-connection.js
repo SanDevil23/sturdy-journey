@@ -12,8 +12,8 @@ const connection = mysql.createPool({
 
 
 const connectDb = async() => {
-    const [rows] = await connection.query("SELECT * FROM customer");
+    const [rows] = await connection.query("SELECT * FROM visitors");
     console.log(rows);
 }
 
-module.exports = connectDb
+module.exports = {connectDb, connection}

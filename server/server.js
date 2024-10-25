@@ -2,13 +2,13 @@ const express = require("express");
 const vRoutes = require("./routes/visitorRoutes")
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const connectDb = require('./config/mysql-db-connection');
+const db = require('./config/mysql-db-connection');
 
 // dotenv config
 require('dotenv').config()
 
 // database connection instance
-connectDb();
+db.connectDb();
 
 // express instance
 const app = express();
