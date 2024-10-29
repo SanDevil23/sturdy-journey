@@ -9,6 +9,7 @@ import ProjectSection from "../components/ProjectSection";
 import BlogsPagePoster from "../components/blogComponents/BlogsPagePoster";
 import Blogs from "./Blogs";
 import NewFooter from "../components/NewFooter";
+import DiwaliBash from "../components/festiveComponents/DiwaliBash";
 // import QRGenerator from "../components/interactiveComponents/QRGenerator";
 
 const Home = () => {
@@ -40,6 +41,7 @@ const Home = () => {
       ) : (
         <div>
           <IntroCard />
+          <DiwaliBash/>
           <AboutSection ref={sectionRefs.section1} />
           <BlogsPagePoster
             toggleBlogs={toggleBlogs}
