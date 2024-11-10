@@ -22,7 +22,7 @@ const NewFooter = () => {
                 <ul>
                     <li className='text-green-900'><b>Useful Links</b></li>
                     <li>Hire for Projects</li>
-                    <li>Connect</li>
+                    <li><a href="/add-visitor">Connect</a></li>
                     <li>Freelance Services</li>
                     <li>FAQs</li>
 
