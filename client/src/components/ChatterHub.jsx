@@ -13,7 +13,7 @@ const ChatterHub = () => {
                 <button className='bg-green-800 rounded-md p-2 hover:bg-lime-600 font-mono'><a href="https://www.github.com/SanDevil23/ChatterHub">View the Code</a></button>
             </div>
 
-            <div>
+            <div className="flex justify-center items-center">
                 {/* image */}
                 <img src="https://uploads-ssl.webflow.com/5f3c19f18169b62a0d0bf387/60b9c51442cedd51532232ea_chat-app.jpg" alt="" />
             </div>

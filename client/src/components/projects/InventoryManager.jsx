@@ -1,17 +1,16 @@
 import React from 'react'
-import coverPic from './assets/images/cover2.png'
 
-const StarbucksLP = () => {
+const InventoryManager = () => {
   return (
     <div className=''>
 
-    <div className='grid grid-cols-2 gap-5 p-20'>
+    <div className='grid grid-cols-2 p-20'>
             <div className='text-cyan-50'>
-                <p className='mt-4 md:mt-8 lg:mt-12 text-left text-2xl font-extralight text-slate-400'>LANDING PAGE</p>
-                <p className='mt-4 md:mt-8 lg:mt-12 text-left text-6xl font-semibold'>Starbucks Landing Page</p>
+                <p className='mt-4 md:mt-8 lg:mt-12 text-left text-2xl font-extralight text-slate-400'>Business Dashboard</p>
+                <p className='mt-4 md:mt-8 lg:mt-12 text-left text-6xl font-semibold'>Inventory Manager</p>
                 <p className='mt-4 md:mt-8 lg:mt-12 text-left text-xl font-medium'></p>
 
-                <p className='mt-4 md:mt-8 lg:mt-12 text-left text-lg font-medium'><b>Built With : </b>HTML, CSS, JavaScript </p>
+                <p className='mt-4 md:mt-8 lg:mt-12 text-left text-lg font-medium'><b>Built With : </b>ReactJS,NodeJS ExpressJS, CSS, Postgres, MongoDB,  </p>
                 
                 <br />
                 <div className=''>
@@ -21,16 +20,17 @@ const StarbucksLP = () => {
                 </div>
             </div>
 
-            <div className='flex justify-center items-center'>
+            <div>
                 {/* image */}
-                <img src={coverPic} alt="" />
+                <img src="https://www.inetsoft.com/images/screenshots/inventory_reporting_dashboard.jpg" alt="" />
             </div>
 
         </div>
       
       
     </div>
+
   )
 }
 
-export default StarbucksLP
+export default InventoryManager

@@ -17,7 +17,7 @@ const Weathosopher = () => {
                 <button className='bg-green-800 rounded-md p-2 hover:bg-lime-600 font-mono'><a href="https://www.github.com/SanDevil23/Weathosopher">View the Code</a></button>
             </div>
 
-            <div>
+            <div className='flex justify-center items-center'>
                 {/* image */}
                 <img src={coverPic} alt="" />
             </div>

@@ -4,6 +4,7 @@ import SlideShow from './SlideShow';
 import ChatterHub from './ChatterHub';
 import Weathosopher from './Weathosopher';
 import StarbucksLP from './StarbucksLP';
+import InventoryManager from './projects/InventoryManager';
 
 const ProjectSection = ((props, ref) => {
     const slides = [
@@ -11,6 +12,8 @@ const ProjectSection = ((props, ref) => {
         <div className='h-screen flex items-center justify-center' key={2}><ChatterHub /></div>,
         <div className='h-screen flex items-center justify-center' key={3}><Weathosopher /></div>,
         <div className='h-screen flex items-center justify-center' key={4}><StarbucksLP /></div>,
+        <div className='h-screen flex items-center justify-center' key={5}><InventoryManager/></div>,
+
     ];
 
     return (
