@@ -5,4 +5,5 @@ const {addVisitor} = require('../controllers/visitorController')
 
 router.post("/add", addVisitor);
 
+
 module.exports = router
