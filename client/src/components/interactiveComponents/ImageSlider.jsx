@@ -52,13 +52,13 @@ const ImageSlider = ({ images }) => {
       {/* Next and Previous Buttons */}
       <button
         onClick={slideToPrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full opacity-70 hover:opacity-100 transition-opacity"
+        className="absolute top-1/2 left-1 transform -translate-y-1/2 text-black text-7xl p-2 rounded-full opacity-70 hover:opacity-100 transition-opacity"
       >
         &#10094;
       </button>
       <button
         onClick={slideToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full opacity-70 hover:opacity-100 transition-opacity"
+        className="absolute top-1/2 right-1 transform -translate-y-1/2 text-black p-2 text-7xl rounded-full opacity-70 hover:opacity-100 transition-opacity"
       >
         &#10095;
       </button>
