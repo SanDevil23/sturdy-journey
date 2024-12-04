@@ -12,8 +12,10 @@ const TopNav = ({ scrollToSection }) => {
         </div>
         <div className="hidden md:flex space-x-2 text-2xl font-mono text-white mr-2"> {/* Hide on small screens */}
           <button className='bg-white text-black rounded-md p-2 hover:bg-transparent hover:text-white' onClick={() => scrollToSection('section1')}>about</button>
+
           <button className='bg-white text-black rounded-md p-2 hover:bg-transparent hover:text-white' onClick={() => scrollToSection('section2')}>blogs</button>
           <button className='bg-white text-black rounded-md p-2 hover:bg-transparent hover:text-white' onClick={() => scrollToSection('section3')}>projects</button>
+          <button className='bg-white text-black rounded-md p-2 hover:bg-transparent hover:text-white' onClick={() => scrollToSection('section4')}>tech</button>
         </div>
         <div className="md:hidden"> {/* Show on small screens */}
           <button className="text-white" onClick={() => { /* Logic for mobile menu */ }}>

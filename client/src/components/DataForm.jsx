@@ -6,7 +6,8 @@ const DataForm = () => {
     // name, email, dob, org
     const [name, setName] = useState("");
     const [email,setEmail] = useState("");
-    const [dob, setDob] = useState("");
+
+    const [msg, setMsg] = useState("");
     const [org, setOrg] = useState("");
     const [orgName, setOrgName] = useState("");
 
@@ -23,8 +24,8 @@ const DataForm = () => {
       setEmail(e.target.value);
     }
 
-    const changeDate = (e) => {
-      setDob(e.target.value);
+    const changeMsg = (e) => {
+      setMsg(e.target.value);
     }
 
     const changeOrg = (e) => {
@@ -33,17 +34,17 @@ const DataForm = () => {
 
     const sendData = async(e) => {
       try {
-        // console.log(name, email, dob, org);
-        // const data = {
-        //   name: name,
-        //   email: email,
-        //   dob: dob,
-        //   org: org,
-        //   orgName: orgName
-        // }
+        console.log(name, email, msg, org);
+        const data = {
+          name: name,
+          email: email,
+          msg: msg,
+          org: org,
+          orgName: orgName
+        }
   
-        // const response = await axios.post('http://localhost:5000/api/v1/visitor/add', data);
-        // console.log(response);
+        const response = await axios.post('http://localhost:5000/api/v1/visitor/add', data);
+        console.log(response);
         navigate("/");
       } catch (error) {
         console.log(error);        
@@ -58,12 +59,13 @@ const DataForm = () => {
         
         {/* <label htmlFor="">Name</label> */}
         <input className='border-blue-800 border-b-2 w-full h-10 focus:border-emerald-500 focus:outline-none' placeholder='Name' type="text" name="" id="" onChange={changeName} />
+        <input className='border-blue-800 border-b-2 w-full h-10 focus:border-emerald-500 focus:outline-none' placeholder='Text' type="text" name="" id="" onChange={changeMsg} />
         
         {/* <label htmlFor="">Email< /label> */}
         <input className='border-blue-800 border-b-2 w-full h-10 focus:border-emerald-500 focus:outline-none' placeholder='Email' type="email" name="" id="" onChange={changeEmail}/>
         
         {/* <label htmlFor="">Date of Birth</label> */}
-        <input className='border-blue-800 border-b-2 w-full h-10 focus:border-emerald-500 focus:outline-none' type="date" name="" id="" placeholder='Date of Birth' onChange={changeDate}/>
+        {/* <input className='border-blue-800 border-b-2 w-full h-10 focus:border-emerald-500 focus:outline-none' type="date" name="" id="" placeholder='Date of Birth' onChange={changeDate}/> */}
 
         {/* <label>Organization</label> */}
         <select name="" id="" placeholder='Organization' className='border-blue-800 border-b-2 bg-white w-full h-10 focus:border-emerald-500 focus:outline-none' defaultValue="college" onChange={changeOrg}>

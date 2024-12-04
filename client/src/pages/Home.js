@@ -10,8 +10,10 @@ import ProjectSection from "../components/ProjectSection";
 import BlogsPagePoster from "../components/blogComponents/BlogsPagePoster";
 import Blogs from "./Blogs";
 import NewFooter from "../components/NewFooter";
-import DiwaliBash from "../components/festiveComponents/DiwaliBash";
+// import DiwaliBash from "../components/festiveComponents/DiwaliBash";
 import WorkExp from "../components/WorkExp";
+import GetInTouchForm from "../components/GetInTouchForm";
+import MyWork from "../components/experience/MyWork";
 
 const Home = () => {
   const [blog, setBlog] = useState(false);
@@ -20,6 +22,7 @@ const Home = () => {
     section1: useRef(null),
     section2: useRef(null),
     section3: useRef(null),
+    section4: useRef(null),
   };
   const scrollToSection = (section) => {
     if (sectionRefs[section].current) {
@@ -42,17 +45,19 @@ const Home = () => {
       ) : (
         <div>
           <IntroCard />
-          <DiwaliBash/>
+          {/* <DiwaliBash/> */}
           <AboutSection ref={sectionRefs.section1} />
           <BlogsPagePoster
             toggleBlogs={toggleBlogs}
             ref={sectionRefs.section2}
           />
-          <TechStack />
-          <WorkExp/>
+          <TechStack ref={sectionRefs.section4} />
+          {/* <WorkExp/> */}
+          <MyWork/>
           <ProjectSection ref={sectionRefs.section3} />
           {/* <QRGenerator/> */}
           {/* <Footer /> */}
+          <GetInTouchForm/>
           <NewFooter/>
         </div>
       )}

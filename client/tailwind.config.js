@@ -6,6 +6,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        dancing: ["Dancing Script"],
+      },
       colors: {
         react: {
           50: '#2b2c2e', 

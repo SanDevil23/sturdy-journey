@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogsPagePoster = ((props, ref) => {
   return (
-    <div ref={ref} className='text-black bg-slate-50 p-6 md:p-20'>
+    <div ref={ref} className='text-black bg-slate-200 p-6 md:p-20'>
       <div className='text-center font-extralight text-4xl md:text-8xl leading-snug'>
         Blog Page Coming Soon
       </div>
