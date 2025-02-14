@@ -18,13 +18,13 @@ const projectData = [
     },
     {
         title: "Task Manager",
-        description: "A simple application to manage day-to-day tasks.",    
+        description: "A simple application to manage day-to-day tasks. Create, Read and Delete your daily tasks to manage your time.",    
         technology: "Java, Spring, Hibernate, JSP"
     },
     {
         title: "Reporting App",
         description: "A social media platform based on reporting immediate information to the local people.",    
-        technology: "Java, Spring, Hibernate, JSP"
+        technology: "JavaScript, ReactJS, NestJS, Redis, Azure"
     }
 ]
 
