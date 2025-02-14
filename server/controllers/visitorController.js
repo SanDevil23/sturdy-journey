@@ -14,9 +14,10 @@ const addVisitor = asyncHandler(async(req, res) => {
 
   // name, email, dob, org
   try {
-    console.log("Add Visitor");
-    const {name, email, dob, org, orgName} = req.body;
-    console.log(name, email, dob, org, orgName);
+    const {name, email, msg, org, orgName} = req.body;
+    console.log(name, email, org, orgName);
+
+    console.log(msg);
 
     // const insertQuery = 'INSERT INTO visitors (name, email, dob, org, orgName) VALUES(?,?,?,?,?)';
     // db.connection.query(insertQuery, [name, email, dob, org, orgName], (err, result) => {
@@ -43,9 +44,11 @@ const addVisitor = asyncHandler(async(req, res) => {
 
     const mailConfigurations = {
       from: 'SanDevil23 <poppybot94@gmail.com>',
-      to:'adhyasankalp23@gmail.com',
-      subject: 'test mail',
-      text: `Good Morning! This is a test mail. \nName: ${name}\nEmail: ${email}\nDOB: ${dob}\nOrganization: ${org}\nOrganization Name: ${orgName}`
+      to: 'adhyasankalp23@gmail.com',
+      subject: `Say Hello to ${name}`,
+      text: `${msg} \nRegards & Thanks \nName: ${name}\nEmail: ${email}\nOrganization Type: ${org},\nOrganization Name: ${orgName}`,
+      // html: `<p>${msg}</p>`,
+      // 'text' and 'html' are both sent, and the client will decide which to display
     };
 
     transporter.sendMail(mailConfigurations, function(error, info) {
