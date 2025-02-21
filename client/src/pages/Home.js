@@ -36,7 +36,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="md:bg-black">
       <TopNav scrollToSection={scrollToSection} />
       {blog ? (
         <div>
